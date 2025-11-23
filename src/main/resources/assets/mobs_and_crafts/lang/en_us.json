@@ -1,0 +1,13 @@
+{
+  "item.mobs_and_crafts.sapphire": "Sapphire",
+  "item.mobs_and_crafts.raw_sapphire": "Raw Sapphire",
+
+  "block.mobs_and_crafts.sapphire_block": "Block of Sapphire",
+  "block.mobs_and_crafts.raw_sapphire_block": "Raw Block of Sapphire",
+  "block.mobs_and_crafts.sapphire_ore": "Sapphire Ore",
+  "block.mobs_and_crafts.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.mobs_and_crafts.nether_sapphire_ore": "Nether Sapphire Ore",
+  "block.mobs_and_crafts.end_stone_sapphire_ore": "Endstone Sapphire Ore",
+
+  "creativetab.mobs_and_crafts": "Sapphire Tab"
+}
