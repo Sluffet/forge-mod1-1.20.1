@@ -13,6 +13,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.sluffet.mobs_and_crafts.block.ModBlocks;
+import net.sluffet.mobs_and_crafts.item.ModCreativeModeTabs;
 import net.sluffet.mobs_and_crafts.item.ModItems;
 import org.slf4j.Logger;
 
@@ -25,7 +27,10 @@ public class MobsandCrafts {
     public MobsandCrafts() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,6 +46,7 @@ public class MobsandCrafts {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.Raw_SAPPHIRE);
         }
     }
 
